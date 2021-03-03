@@ -18,12 +18,14 @@ from django.urls import path
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
-from AdoptaMascotas.views import *
+from AdoptaMascotas.views import index, prueba
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('', views.prueba, name='prueba'),
+    path('index/', views.index, name = 'index'),
+    path('base/', views.base, name = 'base'),
+    path('prueba/', views.prueba, name = 'prueba'),
+
 
 ]
