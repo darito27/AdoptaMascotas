@@ -79,8 +79,9 @@ jQuery(document).ready(function () {
 </head>
 
 <body class="page1">
+  
 
-    <a href="{% static 'index.html' %}"><img src="images/LogoMascotas.png" alt="" align="middle" ></a>
+    <a href="/index"><img src="{% static 'images/LogoMascotas.png' %}" alt="" align="middle" ></a>
   
 <header>
   <div class="container_12">
@@ -89,16 +90,16 @@ jQuery(document).ready(function () {
       <div class="menu_block">
         <nav>
           <ul class="sf-menu">
-            <li class="current"><a href="index.html">Inicio</a></li>
-            <li class="with_ul"><a href="about-us.html">Sobre Nosotros</a>
+            <li class="current"><a href="/index">Inicio</a></li>
+            <li class="with_ul"><a href="/sobrenosotros">Sobre Nosotros</a>
               <ul>
                 <li><a href="#">Testimonios</a></li>
                 <li><a href="#">Archivos</a></li>
               </ul>
             </li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contacts.html">Contacto </a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contacto">Contacto </a></li>
           </ul>
         </nav>
         <div class="clear"></div>
@@ -107,11 +108,10 @@ jQuery(document).ready(function () {
     </div>
   </div>
 
-<!--  CONTENIDO CAMBIANTE -->
 
 {% block content %}
 
-<div><p style="color:white" >Prueba de renglon</p></div>
+
 
 {% endblock %}
 

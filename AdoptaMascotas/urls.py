@@ -23,9 +23,12 @@ from AdoptaMascotas.views import index, prueba
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index, name = 'index'),
-    path('base/', views.base, name = 'base'),
-    path('prueba/', views.prueba, name = 'prueba'),
-
+    path('index/', views.index, name = 'Inicio'),
+    path('base/', views.base, name = 'Base'),
+    path('prueba/', views.prueba, name = 'Prueba'),
+    path('contacto/', views.contacto, name = 'Contacto'),
+    path('blog/', views.blog, name = 'Blog'),
+    path('sobrenosotros/', views.sobreNosotros, name = 'Sobre Nosotros'),
+    path('servicios/', views.servicios, name = 'Servicios'),
 
 ]
