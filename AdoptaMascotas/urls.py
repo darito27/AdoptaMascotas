@@ -19,6 +19,7 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 from AdoptaMascotas.views import index, prueba
+from django.conf.urls import url, include
 
 
 urlpatterns = [
@@ -30,5 +31,6 @@ urlpatterns = [
     path('blog/', views.blog, name = 'Blog'),
     path('sobrenosotros/', views.sobreNosotros, name = 'Sobre Nosotros'),
     path('servicios/', views.servicios, name = 'Servicios'),
+    path('usuario/', include('apps.usuario.urls'),  name = 'usuario'),
 
 ]
