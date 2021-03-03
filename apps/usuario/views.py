@@ -12,7 +12,7 @@ class RegistroUsuario(CreateView):
 	model = User
 	template_name = 'AdoptaMascotas/apps/usuario/registrar.html'
 	form_class = RegistroForm
-	success_url = reverse_lazy('index')
+	success_url = reverse_lazy('usuario:registrar')
 
 
 
