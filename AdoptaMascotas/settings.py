@@ -135,3 +135,5 @@ EMAIL_USE_TLS = True
 EMAIL_PORT=587 
 EMAIL_HOST_USER ='mipagina.2021.1@gmail.com'
 EMAIL_HOST_PASSWORD = 'MiPagina**2021'
+
+AUTH_USER_MODEL = 'usuario.UsuarioRegistrado'
