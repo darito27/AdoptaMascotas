@@ -28,3 +28,21 @@ class RegistroForm(UserCreationForm):
 			'email':'eMail',
 
 		}
+
+
+#class LoginForm(UserCreationForm):
+
+
+#	class Meta:
+#		model = UsuarioRegistrado
+#		fields = [
+#			'username',
+#			'password',
+#		
+#		]
+#
+#		labels = {
+#			'username':'Usuario',
+#			'password':'Contraseña',
+#
+#		}

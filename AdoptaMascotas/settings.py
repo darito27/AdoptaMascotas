@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
+from django.urls import reverse_lazy
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -137,3 +138,7 @@ EMAIL_HOST_USER ='mipagina.2021.1@gmail.com'
 EMAIL_HOST_PASSWORD = 'MiPagina**2021'
 
 AUTH_USER_MODEL = 'usuario.UsuarioRegistrado'
+
+# LOGIN_REDIRECT_URL = '/index/'
+
+LOGIN_REDIRECT_URL = reverse_lazy('usuario:registrar')
