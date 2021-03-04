@@ -8,9 +8,106 @@
 </div>
 <form method="post">
 	{% csrf_token %}
-	{{ form.as_p }}
-	<button type="submit"> Guardar </button>
 	
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div class="form-group">
+			<p></p>
+			<label>Nombre de Usuario</label>
+			<input class="form-control" type="text" name="username">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -lgmd-8 col -lg-offset-2">
+		<div class="form-group">
+			<p></p>
+			<label>Nombre</label>
+			<input class="form-control" type="text" name="first_name">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div class="form-group">
+			<p></p>
+			<label>Apellido</label>
+			<input class="form-control" type="text" name="last_name">
+		</div>
+	</div>
+</div>	
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div class="form-group">
+			<p></p>
+			<label>Direccion</label>
+			<input class="form-control" type="text" name="direccion">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div class="form-group">
+			<p></p>
+			<label>Ciudad</label>
+			<input class="form-control" type="text" name="ciudad">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div class="form-group">
+			<p></p>
+			<label>Telefono</label>
+			<input class="form-control" type="text" name="telefono">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div class="form-group">
+			<p></p>
+			<label>Correo electronico</label>
+			<input class="form-control" type="text" name="email">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div class="form-group">
+			<p></p>
+			<label>Contraseña</label>
+			<input class="form-control" type="password" name="password1">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div class="form-group">
+			<p></p>
+			<label>Confirmar Contraseña</label>
+			<input class="form-control" type="password" name="password2">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div class="form-group">
+			<p></p>
+			<button class="btn btn-primary" type="submit">Guardar</button>
+		</div>
+	</div>
+</div>
+
 </form>
 
 {% endblock %}
