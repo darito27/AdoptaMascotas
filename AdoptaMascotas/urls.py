@@ -32,5 +32,6 @@ urlpatterns = [
     path('sobrenosotros/', views.sobreNosotros, name = 'Sobre Nosotros'),
     path('servicios/', views.servicios, name = 'Servicios'),
     path('usuario/', include('apps.usuario.urls')),
+    path('mascota/', include('apps.mascota.urls')),
 
 ]

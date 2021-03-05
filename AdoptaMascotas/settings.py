@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.usuario',
+    'apps.mascota',
+    'apps.publicacion',
 
 ]
 
@@ -137,6 +139,7 @@ EMAIL_PORT=587
 EMAIL_HOST_USER ='mipagina.2021.1@gmail.com'
 EMAIL_HOST_PASSWORD = 'MiPagina**2021'
 
+AUTH_USER_MODEL = 'usuario.UsuarioRegistrado'
 AUTH_USER_MODEL = 'usuario.UsuarioRegistrado'
 
 # LOGIN_REDIRECT_URL = '/index/'

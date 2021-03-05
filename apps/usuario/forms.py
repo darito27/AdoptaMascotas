@@ -30,19 +30,3 @@ class RegistroForm(UserCreationForm):
 		}
 
 
-#class LoginForm(UserCreationForm):
-
-
-#	class Meta:
-#		model = UsuarioRegistrado
-#		fields = [
-#			'username',
-#			'password',
-#		
-#		]
-#
-#		labels = {
-#			'username':'Usuario',
-#			'password':'Contraseña',
-#
-#		}

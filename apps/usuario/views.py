@@ -21,13 +21,6 @@ class RegistroUsuario(CreateView):
 	success_url = reverse_lazy('usuario:registrar')
 
 
-#class LoginUsuario(CreateView):
-#	model = UsuarioRegistrado
-#	template_name = 'AdoptaMascotas/apps/usuario/login.html'
-#	form_class = LoginForm
-#	success_url = reverse_lazy('usuario:registrar')
-
-
 def login(request):
     # Creamos el formulario de autenticación vacío
     form = AuthenticationForm()
