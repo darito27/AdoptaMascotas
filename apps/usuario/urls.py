@@ -11,7 +11,7 @@ urlpatterns = [
     url(r'^registrar/', RegistroUsuario.as_view(),  name = 'registrar'),
     url(r'^login/', views.login, name = 'login'),
     url(r'^logout/', views.logout, name = 'logout'),
-    url(r'^lista_publicaciones/', views.listaUsuarios, name = 'logout'),
+    url(r'^lista_publicaciones/', views.listaUsuarios, name = 'listaUsuarios'),
    
 ]
 

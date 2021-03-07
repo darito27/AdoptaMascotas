@@ -5,6 +5,7 @@ from django.views.generic import CreateView
 from django.urls import reverse_lazy
 from apps.mascota.forms import RegistroForm
 from .models import Mascota, Categoria, Sexo
+from django.http import HttpResponse
 
 class RegistroMascota(CreateView):
 	model = Mascota
@@ -16,3 +17,9 @@ def listaPublicaciones(request):
 	pub = Publicacion.objects.all()
 	contexto = {'publicaciones':pub}
 	return render(request, 'lista_publicaciones.html', contexto)
+
+def listarMascotas(request):
+	return render(request, 'AdoptaMascotas/apps/mascota/listar_mascotas.html')
+
+
+
