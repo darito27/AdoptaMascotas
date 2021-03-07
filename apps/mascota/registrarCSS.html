@@ -1,0 +1,66 @@
+{% extends "AdoptaMascotas/templates/base.html" %}
+
+{% block content %}
+
+
+<form method="post">
+	{% csrf_token %}
+	
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div>
+			<label>Nombre de la Mascota</label>
+			<input class="form-control" type="text" name="nombre">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -lgmd-8 col -lg-offset-2">
+		<div>
+			<label>Tipo de Mascota</label>
+			<input class="form-control" type="text" name="tipo">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div>
+			<label>Raza</label>
+			<input class="form-control" type="text" name="raza">
+		</div>
+	</div>
+</div>	
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div>
+			<label>Sexo</label>
+			<input class="form-control" type="text" name="sexo">
+		</div>
+	</div>
+</div>
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div>
+			<label>Edad aproximada</label>
+			<input class="form-control" type="number" max="100" name="edad_aproximada">
+		</div>
+	</div>
+</div>
+
+
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div>
+			<button class="btn btn-primary" type="submit">Guardar</button>
+		</div>
+	</div>
+</div>
+
+</form>
+
+{% endblock %}

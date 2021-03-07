@@ -33,5 +33,8 @@ urlpatterns = [
     path('servicios/', views.servicios, name = 'Servicios'),
     path('usuario/', include('apps.usuario.urls')),
     path('mascota/', include('apps.mascota.urls')),
+    path('publicacion/', include('apps.publicacion.urls'), name='publicacion'),
 
-]
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+#urlpatterns+=static(settings.MEDIA_URL, document_ROOT=settings.MEDIA_ROOT)

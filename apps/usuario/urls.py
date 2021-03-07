@@ -9,8 +9,9 @@ app_name='usuario'
 
 urlpatterns = [
     url(r'^registrar/', RegistroUsuario.as_view(),  name = 'registrar'),
-    path('login/', views.login, name = 'login'),
-    path('logout/', views.logout, name = 'logout'),
+    url(r'^login/', views.login, name = 'login'),
+    url(r'^logout/', views.logout, name = 'logout'),
+    url(r'^lista_publicaciones/', views.listaUsuarios, name = 'logout'),
    
 ]
 

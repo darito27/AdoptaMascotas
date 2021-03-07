@@ -1,6 +1,6 @@
 #from django.contrib.auth.models import User
 from django.forms import ModelForm
-from .models import Mascota
+from .models import Mascota, Categoria, Sexo
 
 
 class RegistroForm(ModelForm):
@@ -13,6 +13,7 @@ class RegistroForm(ModelForm):
 			'raza',
 			'sexo',
 			'edad_aproximada',
+			
 		]
 
 		labels = {
@@ -21,6 +22,7 @@ class RegistroForm(ModelForm):
 			'raza' : 'Raza',
 			'sexo' : 'Sexo',
 			'edad_aproximada': 'Edad Aproximada',
+
 		}
 
 

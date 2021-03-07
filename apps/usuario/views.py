@@ -48,7 +48,11 @@ def login(request):
 
 
 def logout(request):
-    # Finalizamos la sesión
     do_logout(request)
-    # Redireccionamos a la portada
     return redirect('http://127.0.0.1:8000/index/')
+
+
+def listaUsuarios(request):
+    usuario = UsuarioRegistrado.objects.all()
+    contexto = {'usuariosRegistrados':usuario}
+    return render(request, 'lista_publicaciones.html', contexto)
