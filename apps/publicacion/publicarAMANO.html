@@ -1,0 +1,29 @@
+{% extends "AdoptaMascotas/templates/base.html" %}
+
+{% block content %}
+
+<form method="post">
+	{% csrf_token %}
+
+<div>
+	<label> Elige mascota</label>
+		<select>{% for mascota in mascotas %}<option>{{mascota.nombre}}</option>{% endfor %}</select>
+</div>
+
+<div>
+	<label>Descripcion</label>
+	<textarea name="contenido" rows="10" cols="50"></textarea>
+</div>
+
+<div class="center" class="row">
+	<div class="col -md-8 col -md-offset-2">
+		<div>
+			<button class="btn btn-primary" type="submit">Guardar</button>
+		</div>
+	</div>
+</div>
+
+</form>
+
+
+{% endblock %}

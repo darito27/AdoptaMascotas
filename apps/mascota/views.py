@@ -19,7 +19,8 @@ def listaPublicaciones(request):
 	return render(request, 'lista_publicaciones.html', contexto)
 
 def listarMascotas(request):
-	return render(request, 'AdoptaMascotas/apps/mascota/listar_mascotas.html')
+	mascotas = Mascota.objects.all()
+	return render(request, 'AdoptaMascotas/apps/mascota/listar_mascotas.html', {'mascotas':mascotas})
 
 
 

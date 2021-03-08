@@ -1,13 +1,14 @@
 from django.forms import ModelForm
-from .models import Post
+from .models import Publicacion
 
 
-class RegistroFormPost(ModelForm):
+class RegistroFormPublicacion(ModelForm):
 
 	class Meta:
-		model = Post
+		model = Publicacion
 		fields = [
 			'titulo',
+			'imagen',
 			'contenido',
 			'autor'
 						
@@ -15,6 +16,7 @@ class RegistroFormPost(ModelForm):
 
 		labels = {
 			'titulo': 'Titulo',
+			'imagen' : 'Imagen',
 			'contenido' : 'Contenido',
 			'autor' : 'Autor',
 			

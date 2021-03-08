@@ -131,6 +131,9 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'AdoptaMascotas/media')
 
+MASCOTAS_URL = '/mascotas/'
+MASCOTAS_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'AdoptaMascotas/media/mascotas')
+
 # CONFIGURACION DE MAIL
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST= 'smtp.gmail.com'
@@ -140,7 +143,7 @@ EMAIL_HOST_USER ='mipagina.2021.1@gmail.com'
 EMAIL_HOST_PASSWORD = 'MiPagina**2021'
 
 AUTH_USER_MODEL = 'usuario.UsuarioRegistrado'
-AUTH_USER_MODEL = 'usuario.UsuarioRegistrado'
+
 
 # LOGIN_REDIRECT_URL = '/index/'
 

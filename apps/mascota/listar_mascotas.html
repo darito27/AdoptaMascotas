@@ -2,9 +2,28 @@
 
 
 {% block content %}
+
+
 <div>
-	<h1>Listado de Mascotas</h>
-	<p></p>
+	<h2 align="center" >Listado de Mascotas</h>
+</div>
+
+{% for mascota in mascotas %}
+	<div>
+
+		<h3 align="center" style="color: red">Nombre : <p style="color: blue">{{mascota.nombre}}</p></h> 
+
+		<img  align="center" src={{mascota.imagen}}>
+		
+		<h5  align="center" style="color: green">Sexo : <p style="color: black">{{mascota.sexo }}</p></h>
+		<h5  align="center" style="color: green">Raza : <p style="color: black">{{mascota.raza }}</p></h>
+
+		 
+	</div>
+
+
+{% endfor %}
+
 </div>
 
 

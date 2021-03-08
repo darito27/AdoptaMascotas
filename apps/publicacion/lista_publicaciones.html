@@ -1,27 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>lista de mascotas</title>
-</head>
-<body>
-<h2 style="color: green">Lista de Publicaciones</h2>
+{% extends "AdoptaMascotas/templates/base.html" %}
+
+
+{% block content %}
+
 
 <div>
-	{% for public in publicaciones %}
-  
-  		{{public}}
-  		
- 	{% endfor %} 
+	<h2 align="center" >Mascotas en Adopcion</h>
 </div>
 
-<h2 style="color: green">Lista de Usuarios</h2>
-<div>
-	{% for usuario in usuariosRegistrados %}
+{% for publicacion in publicaciones %}
+	<div class="card" style="width: 18rem;">
 
-  		{{usuario}}
+		
+		<img  align="center" src={{mascota.imagen}}>
+		<h3 align="center" style="color: red">Mascota : <p style="color: blue">{{publicacion.titulo}}</p></h3> 
 
- 	{% endfor %} 
- </div>
+		<div class="card-body">	
+		<h5 align="center" style="color: red">Contenido : <p style="color: black">{{publicacion.contenido}}</p></h5>
+		<h5 align="center" style="color: black">Fecha Publicación : <p style="color: black">{{publicacion.fecha_publicacion}}</p></h5>
+		<h5 align="center" style="color: black">Autor : <p style="color: black">{{publicacion.autor}}</p></h5>
+		<p class="card-text">Si te interesa, podes postularte para adoptarlo. De todos los postulantes, elegiremos el mas adecuado para {{publicacion.titulo}} </p>
+    
+		 <a href="#" class="btn btn-primary">Me postulo</a>
+		</div>
+	</div>
 
-</body>
-</html>
+
+{% endfor %}
+
+</div>
+
+
+{% endblock %}
