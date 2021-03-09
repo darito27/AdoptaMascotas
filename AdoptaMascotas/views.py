@@ -16,6 +16,9 @@ def prueba(request):
 def base(request):
 	return render (request, 'AdoptaMascotas/templates/base.html')
 
+def politicaPrivacidad(request):
+	return render (request, 'AdoptaMascotas/templates/politica_privacidad.html')	
+
 def blog(request):
 	return render (request, 'AdoptaMascotas/templates/blog.html')
 

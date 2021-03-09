@@ -83,6 +83,8 @@ p {
   margin-bottom: 1rem;
 }
 
+
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -4760,7 +4762,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 1rem;
 }
 
 .card > hr {
@@ -10297,3 +10299,9 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+.div1{
+color:green;
+background-color: DarkGray;
+}

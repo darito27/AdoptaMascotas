@@ -18,9 +18,12 @@ def listaPublicaciones(request):
 	pub = Publicacion.objects.all()
 	contexto = {'publicaciones':pub}
 	return render(request, 'AdoptaMascotas/apps/publicacion/lista_publicaciones.html', contexto)
+	print(request.POST)
 
 def elegirMascotas(request):
 	mascotas = Mascota.objects.all()
 	return render(request, 'AdoptaMascotas/apps/publicacion/publicar.html', {'mascotas':mascotas})
 
-
+def mePostulo(request):
+	mepostulo = request.get("mepostulo")
+	pass

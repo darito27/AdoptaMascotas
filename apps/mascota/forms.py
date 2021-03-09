@@ -12,6 +12,7 @@ class RegistroForm(ModelForm):
 			'tipo',
 			'raza',
 			'sexo',
+			'contenido',
 			'edad_aproximada',
 			
 		]
@@ -21,6 +22,7 @@ class RegistroForm(ModelForm):
 			'tipo' : 'Tipo',
 			'raza' : 'Raza',
 			'sexo' : 'Sexo',
+			'contenido' : 'Contenido',
 			'edad_aproximada': 'Edad Aproximada',
 
 		}

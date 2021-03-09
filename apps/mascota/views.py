@@ -20,7 +20,18 @@ def listaPublicaciones(request):
 
 def listarMascotas(request):
 	mascotas = Mascota.objects.all()
-	return render(request, 'AdoptaMascotas/apps/mascota/listar_mascotas.html', {'mascotas':mascotas})
+	return render(request, 'AdoptaMascotas/apps/mascota/listar_mascotas.html',
+	 {'mascotas':mascotas})
+
+def crearAdopcion(request, id_mascota):
+	#aca se llega desde el formulario listar_mascotas trayendo los datos
+	#puedo imprimir la mascota y el usuario que hizo clic
+	print (id_mascota)
+	print (request.user)
+
+	return redirect('mascota:listar_mascotas')
+	# me redirige otra vez a listar_mascotas, pero en vez de eso
+	#puedo redirigir a otro lado, a insertar el registro en tabla postulantes
 
 
 

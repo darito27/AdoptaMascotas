@@ -20,6 +20,7 @@ class Mascota(models.Model):
 	raza = models.CharField(max_length=20)
 	edad_aproximada = models.IntegerField()
 	imagen = models.ImageField(null = True, blank = True, upload_to='mascotas')
+	contenido = models.TextField( verbose_name="Contenido", null = True, blank = True)
 	fecha_adopcion = models.DateField(null = True, blank = True)
 	duenio =  models.ForeignKey(UsuarioRegistrado, null = True, blank = True, on_delete = models.CASCADE)
 	created = models.DateTimeField(auto_now_add = True)
