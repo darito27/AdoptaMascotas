@@ -54,5 +54,5 @@ def logout(request):
 
 def listaUsuarios(request):
     usuario = UsuarioRegistrado.objects.all()
-    contexto = {'usuariosRegistrados':usuario}
-    return render(request, 'lista_publicaciones.html', contexto)
+    contexto = {'listaUsuarios':usuario}
+    return render(request, 'lista_usuarios.html', contexto)

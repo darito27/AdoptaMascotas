@@ -1,4 +1,3 @@
-#from django.contrib.auth.models import User
 from django.forms import ModelForm
 from .models import Mascota, Categoria, Sexo
 
@@ -14,6 +13,7 @@ class RegistroForm(ModelForm):
 			'sexo',
 			'contenido',
 			'edad_aproximada',
+			'imagen',
 			
 		]
 
@@ -24,7 +24,7 @@ class RegistroForm(ModelForm):
 			'sexo' : 'Sexo',
 			'contenido' : 'Contenido',
 			'edad_aproximada': 'Edad Aproximada',
+			'imagen' : 'Imagen',
 
 		}
-
 

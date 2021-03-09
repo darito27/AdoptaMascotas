@@ -1,10 +1,11 @@
 from django.db import models
-from apps.usuario.models import UsuarioRegistrado
 
 # Create your models here.
 
+from apps.usuario.models import UsuarioRegistrado
+
 class Categoria(models.Model):
-    categoria = models.CharField(max_length=50, help_text="Ingrese el tipo de mascota: Perro, Gato, Reptil, Ave, Otro")
+    categoria = models.CharField(max_length=50, help_text="Ingrese el tipo de mascota: Perro, Gato, Reptil, Ave, Roedor, Otro")
     def __str__(self):
     	return self.categoria
 
@@ -27,5 +28,3 @@ class Mascota(models.Model):
 	updated = models.DateTimeField(auto_now_add = True)
 	def __str__(self):
 		return(" %s es un %s  %s de raza %s " %(self.nombre, self.tipo, self.sexo, self.raza))
-
-

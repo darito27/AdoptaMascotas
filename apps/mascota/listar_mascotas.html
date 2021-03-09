@@ -5,37 +5,30 @@
 
 
 <div>
-	<h2 align="center" >Listado de Mascotas</h>
+	<h2 align="center" >Mascotas para Adopción</h>
 </div>
 
 {% for mascota in mascotas %}
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-  <div class="col">
-	<div class="card shadow -sm" style="width: 18rem;  background-color:LightYellow;">
+<div class="container" >
+	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+	  <div class="col">
+		<div class="card shadow -sm" style="width: 20rem; height: 26rem;  background-color:LightYellow;">
 
-		<h3 align="center" style="color: red">Te está esperando <p style="color: blue">{{mascota.nombre}}</p></h> 
+			<h3 align="center" style="color: red">Te está esperando <p style="color: blue">{{mascota.nombre}}</p></h> 
 
-		<img  align="center" src={{mascota.imagen}}>
-		
-		<h5  align="center" style="color: green">Sexo : <p style="color: black">{{mascota.sexo }}</p></h>
-		
-		<h5  align="center" style="color: green">Raza : <p style="color: black">{{mascota.raza }}</p></h>
-		
-		<h5 align="center" style="color: red">Te cuento algo mas : <p style="color: black">{{mascota.contenido}}</p></h5>		
+			<img  align="center" src={{mascota.imagen}}>
+			
+			<h5  align="center" style="color: green">Sexo : <p style="color: black">{{mascota.sexo }}</p></h>
+			
+			<h5  align="center" style="color: green">Raza : <p style="color: black">{{mascota.raza }}</p></h>
+			
+			<h5 align="center" style="color: red">Te cuento algo mas : <p style="color: black">{{mascota.contenido}}</p></h5>		
 
-
-		<form name = "mepostulo" method = "post" action="mePostulo">
-			{% csrf_token %}
-		  <!-- <input name="mepostulo" class="btn btn-primary" type = "submit"  value="Me Postulo"/>-->
-		</form>
-
-		<a href="{% url 'mascota:crearAdopcion' mascota.id  %}"> Adoptame  </a>
-		<!-- me lleva a la vista crearAdopcion y desde ahi puedo insertar registro en tabla de postulantes -->
-		 
+			 
+		</div>
+	  </div>
 	</div>
-  </div>
 </div>
-
 {% endfor %}
 
 </div>

@@ -10,28 +10,11 @@ from django.conf import settings
 def index(request):
 	return render (request, 'AdoptaMascotas/templates/index.html')
 
-def prueba(request):
-	return render (request, 'AdoptaMascotas/templates/prueba.html')	
-
 def base(request):
 	return render (request, 'AdoptaMascotas/templates/base.html')
 
 def politicaPrivacidad(request):
 	return render (request, 'AdoptaMascotas/templates/politica_privacidad.html')	
-
-def blog(request):
-	return render (request, 'AdoptaMascotas/templates/blog.html')
-
-def sobreNosotros(request):
-	return render (request, 'AdoptaMascotas/templates/sobrenosotros.html')
-
-
-def servicios(request):
-	return render (request, 'AdoptaMascotas/templates/servicios.html')
-#class Contacto(DetailView):
-#	template_name = 'contacto.html'
-
-
 
 def contacto (request):
 	if request.method == 'POST':

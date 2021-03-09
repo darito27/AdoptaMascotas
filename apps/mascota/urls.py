@@ -12,9 +12,5 @@ app_name='mascota'
 urlpatterns = [
     path('registrar/', RegistroMascota.as_view(),  name = 'registrar'),
     path('listar_mascotas/', views.listarMascotas, name='listar_mascotas'),
-    path('crearAdopcion/<int:id_mascota>', views.crearAdopcion, name='crearAdopcion'),
 
-
-  
 ]
-
