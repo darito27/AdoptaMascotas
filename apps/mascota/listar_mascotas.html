@@ -22,7 +22,11 @@
 			
 			<h5  align="center" style="color: green">Raza : <p style="color: black">{{mascota.raza }}</p></h>
 			
-			<h5 align="center" style="color: red">Te cuento algo mas : <p style="color: black">{{mascota.contenido}}</p></h5>		
+			<h5 align="center" style="color: red">Te cuento algo mas : <p style="color: black">{{mascota.contenido}}</p></h5>	
+
+
+			<a href="{% url 'mascota:postularAdopcion' mascota.id %}"> Adoptame  </a>
+			<!-- lleva los datos al formulario como diccionario -->	
 
 			 
 		</div>

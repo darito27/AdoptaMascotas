@@ -1,0 +1,28 @@
+{% extends "AdoptaMascotas/templates/base.html" %}
+
+
+{% block content %}
+
+
+<div>
+	<h2 align="center" >Postulantes para Adopción</h>
+</div>
+
+{% for postulante in postulantes %}
+<div class="container" >
+	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+	  <div class="col"> 
+		<div class="card shadow -sm" style="width: 20rem; height: 26rem;  background-color:LightYellow;">
+
+			<h3 align="center" style="color: red">postulante <p style="color: blue">{{postulante.usuarioregistrado.first_name}}
+			{{postulante.mascota.nombre}}</p></h> 
+		</div> 
+	  </div>
+	</div>
+</div>
+{% endfor %}
+
+</div>
+
+
+{% endblock %}

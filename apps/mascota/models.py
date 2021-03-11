@@ -28,3 +28,13 @@ class Mascota(models.Model):
 	updated = models.DateTimeField(auto_now_add = True)
 	def __str__(self):
 		return(" %s es un %s  %s de raza %s " %(self.nombre, self.tipo, self.sexo, self.raza))
+
+
+class Postulantes(models.Model):
+	id_mascota = models.ForeignKey(Mascota, on_delete = models.CASCADE)
+	id_usuario = models.ForeignKey(UsuarioRegistrado, on_delete = models.CASCADE)
+	usuario = models.CharField(max_length=20)
+	def __str__(self):
+		return ("el usuario %s se postula para la mascota %s" %(self.usuario, self.id_mascota))
+
+
