@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^login/', views.login, name = 'login'),
     url(r'^logout/', views.logout, name = 'logout'),
     url(r'^lista_usuarios/', views.listaUsuarios, name = 'listaUsuarios'),
+    
    
 ]
 

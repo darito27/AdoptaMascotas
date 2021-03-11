@@ -54,5 +54,5 @@ def logout(request):
 
 def listaUsuarios(request):
     usuario = UsuarioRegistrado.objects.all()
-    contexto = {'listaUsuarios':usuario}
-    return render(request, 'lista_usuarios.html', contexto)
+    contexto = {'listausuarios':usuario}
+    return render(request, 'AdoptaMascotas/apps/usuario/lista_usuarios.html', contexto)

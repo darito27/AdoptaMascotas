@@ -15,4 +15,5 @@ urlpatterns = [
     path('postular_adopcion/<int:id_mascota>', views.postularAdopcion, name='postularAdopcion'),
     path('listar_postulantes/', views.listarPostulantes, name='listarPostulantes'),
 
+
 ]

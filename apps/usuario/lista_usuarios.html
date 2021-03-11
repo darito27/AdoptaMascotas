@@ -1,0 +1,23 @@
+{% extends "AdoptaMascotas/templates/base.html" %}
+
+
+{% block content %}
+
+
+<div>
+	<h2 align="center" >Lista de Usuarios Registrados</h>
+</div>
+
+{% for usuarios in listausuarios %}
+
+
+			<h3 align="center" style="color: red">Usuario: <p style="color: blue">{{usuarios.username}}</p></h> 
+			<h5  align="center" style="color: green">eMail : <p style="color: black">{{usuarios.email}}</p></h>
+			<div class="dropdown-divider"></div>
+
+{% endfor %}
+
+</div>
+
+
+{% endblock %}
