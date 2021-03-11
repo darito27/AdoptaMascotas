@@ -35,6 +35,6 @@ class Postulantes(models.Model):
 	id_usuario = models.ForeignKey(UsuarioRegistrado, on_delete = models.CASCADE)
 	usuario = models.CharField(max_length=20)
 	def __str__(self):
-		return ("el usuario %s se postula para la mascota %s" %(self.usuario, self.id_mascota))
+		return ("el usuario %s se postula para la mascota %s" %(self.id_usuario, self.id_mascota))
 
 
